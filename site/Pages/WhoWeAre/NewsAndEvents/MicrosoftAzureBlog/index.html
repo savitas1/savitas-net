@@ -1,0 +1,598 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	savitas.net - 
+</title><script src="/_assets/bundles_modernizr.js"></script>
+<link href="/_assets/Content_css.css" rel="stylesheet"/>
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- Custom styles for this template -->
+    <link href="/Content/sticky-footer-navbar.css" rel="stylesheet" />
+
+    <script src="/Scripts/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    
+</head>
+<body>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1072412649463426',
+                xfbml: true,
+                version: 'v2.5'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <form method="post" action="./MicrosoftAzureBlog" id="ctl01">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="i+7w186PweXz7zqX93HBlUfieBhI6b1w2VVWOE9PKdK7HM7x53zSdjwIB8wYPIjBXIY1Exjqc+ii370Z/PBZkNEmjTWQ76f8QD02FXOCZOJ0gx+0Kgu847FDwA7VEYzS+rMAgSInVbWZEQpcKQkXO6Jj9f4LhscoPeTHsQOH5XloiM1ZSM9+NkO/y1rpzZ5Yof0L7ssWrkvnvWml2YYURKG6BgcKkUqDFrFCepkm+MT3cRN2Ic7qvqfUpMv6dgVDToftt7vpMFIuuuOSqgOnQFq7GV+yxb0UaZ+ZJQfqL8B60clTNBAABzIOZosPWsmdeEVWkZwF3hG4UdfRo40iG3rgCMBs0z3GDI7q7gT3xdT1IUjL79xGEcrsfOHU/NTfRmBc6UMI81+Xxv93PRd9v8tNwjQ2jZWls0ETIYIzY0tZHZRac2P4HeSObCBfbv8BA240LEWC/w+F6amdPxSW8ECLg6c8b9vDerk6YzqAg8mvaA0pL9G86ekHBIEQUTv3jnm8sW1eOwMiyH+e+SfcbNyDmFrkTQK6rCE8t32RDXljI1XXBd6X+nhIwbdRkrb0r16a2FmIEPXpwRdOqpYBbo8ANyz9yoE7oDov7s1ZB7W/bV2jl8ZwoMN6zj3ro3WWzAtgoANRTtmFJtFShU2Goev1suXo+7tiVHvT0av0zf/zDDpC1xPSDg//yu3FsPXXMBXfrm9PXVeWK5CPCTFrDBz8LVdYKSt1doALIPtWFxTbuFrWxxukRGTWEb1IdPMkfckAAxKoSyUCgeX2mX6QPtXynoyqiCBIM8oZEEc4wVQ/OBqmLCA8PPRGtvexSfp/KwTgd6fqcRXyuL32Ts4m2hmpYHsVjS6BZsI4cfemGPqkNkR1zUwE8+U8iASdPy1xI/A3Dt0f399LdWo7D7vgg/bbADAdUSzCxaRJ70Qf4kR8CtzhN4tKWSjalJ4EbVW8UetDKYpozx1Ck7n/j0GiZ7nusHUfz96qche4YGj3UphNxscH9FmCTEnEKK6NlJXblB8Zo420sLVpZ+eJikcPw7SYW/wexv98ZaoayncwjHZ/H3bOEgqEGkTDVIwEdJFmgcUVKxAonhxA3jvIei0eyxU+P3QDbEWtVO1offt+zfMIkMP06qcNozlYSoc8UkokldJ4BNLiNLI/iQcBMpuLlWZSEbvuvQJH9gJeZbHbTfe7cB5zDiHPRTrrk5J/FjxH4m9NWY2HVlKcQQa+pKzoXyBvwN6qwHk4bhM9FNBpsaCDWpqRyLBGe5FI3KDh7dXC1SPByp86K9EF/ZDcB3OwQsbbY5hi35rnmKEmVo+eAnJHCly5tKWs8rF7Kg7jn3dj0b5EHl686j5Xvs5gh1/E54tOHR6e6CsFcziQB5eNVBtJFJaPzdWNpHwEZwDVl/Cgv6Zo8b19l/Il9EntV2PFjoX6hNbIB7OSNY4x+gdsLPLB+E3ssx7CKTZXZUbn1/5JFXmYKnwVpATSYhnUNPeL3hrtLqxoRULv0UIJFNFPQtllkm80FXvvim47z45VZDuXWD/uqOYyfIm8M2y3YuANwNKww5cDL32fbBKkjzeSXb7L73M9N54CbJdAwetsZN7CUqtgafOnrAR53jOLpvS80no1u+xJsKTv7cTcKQ7v9dOZFuy5/I0uwnxREgUCK8yf8Lj4MPpaub6E0FtCO64OdQqpjC7D2ySzKvbyo6ybxDN7ezu6aU/b31ErlsVEbXV50BNkEAEt5w1/ZGfrnS/AfBecez/V9tWzPqoj/mFCXC2RGIWaAsfVHpoa8ofPiad+XPLDw0K2HTJVXimMhism8zLD6ZFk2J1Q/lWr6yv6GQ6yc1s1apwjn2p8iPKj3WNj68HzWiNuY7K5m7GZVfqeTCI3POzLRv83RJGI0zTiV7ddmrfYpIfoRV1VbD/F4y4dhpR2QsNBot8mptD+g/qw4Pav1nMBV7r8wtnCpeNh2TLNGEDsxyU3Gf2gO4Lbh4XEI2HU4jl/nVoZvagXwq8EDiFjcp2ykHjZnlkNHK6pKmV1JshMT5eb3MCJxeyXt/Opj9ACl37dTYyoISSm71AS4FCsZyyVCjxI5sddfyOnP8PdF422AnTVKgMgAT6zbHijqxh47d9310NARq32WM4Wzq14aX3gDXmVULgKofvzj1HKAUhUxnCF7Hmb6PgoQePeGVhZwn71MFZWGM5V3TDamzBqSposA7n852z/E7ZT1STYGZPJlv8aKIdY8OTAaCnSPMKMpm4RQaOW4aE4KUMekkxx30BiO7OTqO0Bb4OtYkJYifK0eUisKJS4r45h19hJ259tJ7NyfO4h50xETEfiAEp8Qa3Ze4mZv7VWyDi2MUV4YtZr0lciR5zFPvuuDkC4jgkpGkelBZUABi7JTAj4TA/wyuNVtZOePQJruVgFANXlEpQlj4XcJOuyEAXRrjw50WNpOlTkbParFSqSpmvhkTRg5T1sbz3SQ3fAkflnH1HR99mELpiWZPffNpNKb80FFm2N/JlpRurcJew2+3h4EuNWLA2lqjRk1LCo6xuQuRNpBLUg7tSevsyxW27NUqNGTjci2+nXAESZza2K0AkENjxncKgC4NiP1sDXeqpdZuq6QVmdVYKbPncRUJlpP0/tpkUK9978ehlbuwWKQOrYkUWOjGi0tOGd7PzidJ0HCw3BWjA34PiEMoCGXwTDuxWp6qQ7AxkOelbBj14JpWcJgFbEu9QzHEIURltOL8q2ObqhqmHxviWL5kLHOjMqEtX6ksBVJsGEB4YCp28C5Hr3gRcSpfxu1kcDOIfP5mLYbuoTp+zyweIZZqnlwIc7dUdl+qTucJI4YlnVSB8Mjizfmi6YZGgwSy20e+HlBwyU7rpuuf2B1RwUWjHeqhLRXk69Z85f3oclq1c3/c37Z5WlPmDk5QOEA+4ZhMk7A6dWpDuxvDtzBVLNhwJyKMMtPC4AmjtRuB2C021eQCsX2C4+dhb+eYsNhJ4Q4irAVtgvz6aSJqcMoRzTUBMJrFWe8zsmbRLg4V2l+nPrKfiU9XMtdKU81l6bLNcIvoSY+NvLH/NFcVT1SCVcekee/2QLLKSwV7pb3hfdeG1lLBYUXnH9ao8z+XL6cZ3LfZit6+r7RY+FwP+Kd4gVcGuRkcyFgIr4HvAVVBykyIgmcS0pmImbOjyXhYymxodVywReDD5UhbNq0Tq0e8Y5qB98oGlNHYMkNC2fa7SH3OYx5PJ/Pe4z6t1WE+/+6lVPKBlaoFWL4zbgyT8UaD36IY7L+VhcOSGtYq+xdXmfwgShu662MKyxiqsFNHV1ibitHFO+BD5uZ4mkMKD1/Eo+5CVeIAU0RyPNU0FYnKQ6RiiSfTAkxpoSS5OHRsjtidNSa/s/u0/1URnROZC93JnRIi8qYKyWbGYXfdMRHmPGFuQh+5mtCWYnpE6nvRrHP+QuEKs8tF7t+gA/EKm2lZ2vcMrxv6/WCWq9LbdYRdLGM2KXEZ/+/wfGNkjCetWb4xWwPy3n9Ob45ON5sMsYbQtgS5rQ8eGdLjkEzNZjETF61ULgGB9jT/rad90VHu4rsJ7pxvT/kDYnFEoo47EneV59W2LkLCQo/7R7cW42t3M9p8mGFoNXG12EBsDmMLgMABjkgmijBtBUtI51vuy11qGuoBB5/8pUBBOVy/87iX8j5yeUqYUiwT5ScZtNDDmm5yjD2KuMqhZTUoEjB9cYOE/yBxmoJMM+MYF2RVLeBVJw0nHJkPlaVj1tY94C/BYvBGXAUrWbBv2eMYPzCGHGktqTkhUlb7Jtrxkcbd3PtcULMIJsP8Veo3tyP5jrPhnbPhxw4BOe5mGPml8hcWY6QPNRLmybsSkFZxv9Zj3xcHqi1bu2gZsQOmxx2JszhmM4eGEX+1JKGjSklXu8yLDoC2X/qAXCVrcd5W4S/Mr6l4Yeh+yYXmbNSDkOFQ/r4oD+PPPytj2JruAoeRsgsLYIlAdcezK6NKwuW4xr7cP9fjH2AAkzDiBBnKyInUZv3hAyTCURecE8NeWd0JgQ1byWYy43dLhZP3CTc/Gm/kvwvYVkweE+Ed/fe5C30KB6UGt9i//OELUTUefOkYip3iWVw6y2EBh+of//2QYK3Y9Bs5p6NRIR/EAg1G7BYYTLf4zMf06/Ki3TUrFfiD2vLVk04456WOjlWyAR9WjmZOk6aJEvaaFrBNKwSsYXpwDZkMr3P+6QS10pDhlVJAoUTvoWrIQ6i//PL4ktkSyQC2BtzgKwi9aRcN5PLMvok6vrbYm9Ge2FKHfzjLzc4URPrE23NAMkz9OPufYUS84ZUS+J2SAxYlDqljEQaQppXHNX/mWKL+MR3mnbm9dgOYk4qIh8yf9sZ2af8vLXeglXA/kS9Nh63J4SOitAapFy2BjeymGmnOXr8waLnlnIZeRHzwSfbBmPIIek+tl9n6nBrQxo+W02z0e08t5cEXao5wf9ePlMsKZXxIAZYRn3FFfGAyKZ0oZaDEaSvQmV7h5FbZgqbwlGRmNKKm9sQNP0BFviiwgj7O3UHoP12A0TVuSrBmSJCOuWevqlritQ4ubxqFJhnT1K85nNzUUF3XTowFjSQeOTJE8m5yVYuwZfVLH/E4NpMbI04baP/gD0Wrm3V00XsRM0qdZpih4CNRH3fVG47vs3hqlFsbCHlBWCVRlQ19nEEEegezl7x4Qo99BrhHAPIsMYOTOm8u2vmWEwgOrsMUA2YXiaRvCIcvKYttYvhQahWlOzqqtbsUzD15ZmK7617w3xIJIicKO1x5UidMwLdSWEsP6YXpm/LgjSlFGeB5w/b9/ioj+aN3aXHbMkB7kin9STTWgv7vUoI7fxmgRKZnTqhBaIuT8ZRXEN6mh+x3teVDEkdflMFN3yzf3ASQjIJuiUBYocceIbkxYh9wvN9HTNmhpyde8QcUbFM0UuVxNxy6i2iEmgHmaJR8gryI5fiHRCtJW57dh8z6NU1gEO+v14urXBYbTQIW8coI0BRLnTIk7qQvRcpEeZEsu1/Uq+By2pakLH33e0RrTMBlfhnmDKdWHGBF9WC8H8oCQrXA3U2LIVZzYUukaYnn9L7QiFHI3gzoql854ZcYz4HqTsqB/d4WqarV4F3aW2uP6NjywYqnvRvlARHKbL9lB1/+UUSX22l/xo+5PEDA/gl4ab1YFjYofcHtLIQRfzpVkrPiFpTzBY3mPHCagcFxdPVL2VQ9K/qT4lFR9nArM5IBq8/cyfJxfv51FRFZPTsQS2yaHv78H1yV1MkRCSb/uhyiIAUsSMDHmtR3FA23nZh56m1V8TyODwpEOOOpBRMg7p+iwnhBsHAteRYfrSCiKB5xMOGfSCDyJBQnTGf8XX381sKHvqr0GyOtyoNhdxHUpKBBYo+I4UnJzheiWdxBvZZ3NFx4XZQaaCY0see497PAjrLYx6S24O0N/4oi2UekTezlX6Qy9P+CQtLPG4E5QnNyFz1+k/8cJhu++tBsGzQOixs1agBxpQBtJoQ7+hrZxbACn92/pYp2QDfroQXazXSBR/np4dUrEKZZyMg7K5cV8XHw9TrID1iT2jg9knc3f5yc0JFZWMI+zbX55Ax2ERsaYNuHas0CLq0G46VfGUpisRhCRtwOf5O6OdCGeuHgmZp68JGDyxw1ETMT2xMDnCmYBA8+bAskmJ0xGIrCRyDH656vKwtPZzrABU36cHfWF540bXgCpk9Dje5tEmonM48MB5oLdsydUnIukPbjYzFShIxZ4XhdwyiYO4OZamvdwgoA3fbmZYSvhOD+4BZ56vZyLW6VZBhmfreaGFXaVGe+B/cFYNgvtHoWeYguLfehM=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl01'];
+if (!theForm) {
+    theForm = document.ctl01;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script src="/_assets/bundles_MsAjaxJs.js" type="text/javascript"></script>
+<script src="/Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="/Scripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="/Scripts/respond.min.js" type="text/javascript"></script>
+<script src="/_assets/bundles_WebFormsJs.js" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="460E2978" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl10', 'ctl01', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid" style="background-color: #00264f; padding-top: 0px; padding-right: 25px; text-align: right">
+                <img src="/images/masthead/images/tagline.gif" />
+            </div>
+            <div class="container-fluid" style="background-color: #4d6d9b">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="/images/masthead/images/logo.gif" /></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="vertical-align: middle">
+                    <ul class="nav navbar-nav navbar-right" style="vertical-align: bottom">
+
+                        <li class="dropdown">
+                            <a href="/Pages/WhoWeAre/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Who We Are<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Pages/WhoWeAre/">Overview</a></li>
+                                <li><a href="/Pages/WhoWeAre/ProjectHistory/">Project History</a></li>
+                                <li><a href="/Pages/WhoWeAre/Partners/">Partners</a></li>
+                                <li><a href="/Pages/WhoWeAre/Leadership/">Leadership</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="menu-item dropdown dropdown-submenu pull-left">
+                                    <a href="/Pages/WhoWeAre/NewsAndEvents/" class="dropdown-toggle" data-toggle="dropdown">News & Events</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="/Pages/WhoWeAre/NewsAndEvents/">Industry News</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Pages/WhoWeAre/NewsAndEvents/MicrosoftAzureBlog/">Microsoft Azure BLOG</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="/Pages/Contact/">Contact Us</a></li>
+                                <li><a href="/Pages/RequestAppointment/">Request Appointment</a></li>
+                                <li><a href="/Pages/PrivacyPolicy/">Privacy Policy</a></li>
+
+                                <li role="separator" class="divider"></li>
+                            </ul>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="/Pages/WhatWeDo/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What We Do<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Pages/WhatWeDo/">Overview</a></li>
+                                <li class="menu-item dropdown dropdown-submenu pull-left">
+                                    <a href="/Pages/WhatWeDo/Services/" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a href="/Pages/WhatWeDo/Services/">Overview</a></li>
+                                        <li class="menu-item dropdown dropdown-submenu pull-left">
+                                            <a href="/Pages/WhatWeDo/Services/Consulting/" class="dropdown-toggle" data-toggle="dropdown">Consulting</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Services/Consulting/#Strategic">Strategic</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Services/Consulting/#Tactical">Tactical</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Services/CIOServices/">CIO Services</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Services/NetworkingAndTelecommunications/">Networking & Telecommunications</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Services/StaffAugmentation/">Staff Augmentation</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Services/Staffing/">Staffing</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Services/SoftwareAssetManagement/">Software Asset Management</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Services/SystemMaintenancePlans/">System Maintenance Plans</a></li>
+                                        <li class="menu-item dropdown dropdown-submenu pull-left">
+                                            <a href="/Pages/WhatWeDo/Services/Training/" class="dropdown-toggle" data-toggle="dropdown">Training</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Services/TrainingIndividual/">Individual</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Services/TrainingGroup/">Group</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Services/VendorManagement/">Vendor Management</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="/Pages/WhatWeDo/Services/Hourly/">Hourly</a></li>
+                                        <li><a href="/Pages/WhatWeDo/Services/FlatFee/">Flat Fee</a></li>
+                                        <li><a href="/Pages/WhatWeDo/Services/ServicePolicies/">Service Policies</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item dropdown dropdown-submenu pull-left">
+                                    <a href="/Pages/WhatWeDo/Solutions/" class="dropdown-toggle" data-toggle="dropdown">Solutions</a>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a href="/Pages/WhatWeDo/Solutions/">Overview</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Solutions/AdvancedSolutions/">Advanced Solutions</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Solutions/ApplicationLifecycleManagement (ALM)/">Application Lifecycle Management (ALM)</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Solutions/BusinessIntelligence/">Business Intelligence</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Solutions/Cloud/">Cloud</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Solutions/DocumentManagement/">Document Management</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Solutions/HardwareAsAService (HAAS)/">Hardware as a Service (HAAS)</a></li>
+                                        <li class="menu-item dropdown dropdown-submenu pull-left">
+                                            <a href="/Pages/WhatWeDo/Solutions/ManagedServices/" class="dropdown-toggle" data-toggle="dropdown">Managed Services</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/ManagedServices/#Overview">Overview</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/ManagedServices/#Preventive">Preventive Maintenance </a>
+                                                </li>
+                                                <li><a href="/Pages/WhatWeDo/Solutions/SolutionArchitecture/">Solution Architecture</a></li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/ManagedServices/#System">System Monitoring</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/ManagedServices/#System">System Maintenance</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/ManagedServices/#Network Monitoring & Management">Network Monitoring & Management</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/ManagedServices/#Vendor Management">Vendor Management</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/ManagedServices/#IT Governance/Compliance">IT Governance/Compliance</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/ManagedServices/#Software Asset Management">Software Asset Management</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item dropdown dropdown-submenu pull-left">
+                                            <a href="/Pages/WhatWeDo/Solutions/RetailPointOfSale/" class="dropdown-toggle" data-toggle="dropdown">Retail Point of Sale</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/RetailPointOfSale/">Overview</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/RetailPointOfSale/MicrosoftDynamicsRMS/">Microsoft Dynamics RMS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/RetailPointOfSale/RetailManagementHero/">Retail Management Hero</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Solutions/Security/">Security</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Solutions/SoftwareAsAService (SAAS)/">Software as a Service (SAAS)</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Solutions/SharePointSolutions/">SharePoint Solutions</a></li>
+                                        <li class="menu-item dropdown dropdown-submenu pull-left">
+                                            <a href="/Pages/WhatWeDo/Solutions/SystemAssessment/" class="dropdown-toggle" data-toggle="dropdown">System Assessments</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/SystemAssessment/#HardwareSoftware">Hardware/Software</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/Solutions/NetworkAssessment/#Network">Network</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Solutions/SystemsIntegration/">Systems Integration</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/Solutions/VOIPCloudPhoneSystems/">VOIP/Cloud Phone Systems</a></li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="menu-item dropdown dropdown-submenu pull-left">
+                                    <a href="/Pages/WhatWeDo/SoftwareDevelopment/" class="dropdown-toggle" data-toggle="dropdown">Software Development</a>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a href="/Pages/WhatWeDo/SoftwareDevelopment/">Overview</a></li>
+                                        <li class="menu-item dropdown dropdown-submenu pull-left">
+                                            <a href="/Pages/WhatWeDo/SoftwareDevelopment/PackagedSoftware/" class="dropdown-toggle" data-toggle="dropdown">Packaged Software</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/SoftwareDevelopment/PackagedSoftware/">Savitas Advanced Reports for RMS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/SoftwareDevelopment/PackagedSoftware/">Savitas Advanced Reports for AIM</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item dropdown dropdown-submenu pull-left">
+                                            <a href="/Pages/WhatWeDo/SoftwareDevelopment/CustomSoftware/" class="dropdown-toggle" data-toggle="dropdown">Custom Software</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/SoftwareDevelopment/CustomSoftware/">Savitas Playlist Exporter</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/SoftwareDevelopment/CustomSoftware/">Savitas Sales Accelerator</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Pages/WhatWeDo/SoftwareDevelopment/CustomSoftware/">Systems Integration Software</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/SoftwareDevelopment/WebSoftwareDevelopment/">Web Software Development</a></li>
+                                        <li class="menu-item"><a href="/Pages/WhatWeDo/SoftwareDevelopment/Mobile/">Mobile</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <li class="dropdown">
+                                <a href="/Pages/WhoWeServe/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Who We Serve<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/Pages/WhoWeServe/">Overview</a></li>
+
+                                    <li class="menu-item dropdown dropdown-submenu pull-left">
+                                        <a href="/Pages/WhoWeServe/BySize/" class="dropdown-toggle" data-toggle="dropdown">By Size</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="/Pages/WhoWeServe/BySize/#SmallBusiness">Small Business</a>
+                                            </li>
+                                            <li>
+                                                <a href="/Pages/WhoWeServe/BySize/#MediumBusiness">Medium Business</a>
+                                            </li>
+                                            <li>
+                                                <a href="/Pages/WhoWeServe/BySize/#LargeBusiness">Large Business</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item dropdown dropdown-submenu pull-left">
+                                        <a href="/Pages/WhoWeServe/ByIndustry/" class="dropdown-toggle" data-toggle="dropdown">By Industry</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="/Pages/WhoWeServe/ByIndustry/Construction/">Construction</a>
+                                            </li>
+
+                                            <li class="menu-item dropdown dropdown-submenu pull-left">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Government</a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a href="/Pages/WhoWeServe/ByIndustry/Government/#Local">Local</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/Pages/WhoWeServe/ByIndustry/Government/#State">State</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/Pages/WhoWeServe/ByIndustry/Government/#Federal">Federal</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="/Pages/WhoWeServe/ByIndustry/FinancialServices/">Financial Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/Pages/WhoWeServe/ByIndustry/Retail/">Retail</a>
+                                            </li>
+                                            <li>
+                                                <a href="/Pages/WhoWeServe/ByIndustry/Education/">Education</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        
+                                <li class="dropdown">
+
+                                <li class="dropdown"><a href="/Pages/Account/Register/" id="LoginView1_register">Register</a></li>
+                                <li class="dropdown"><a href="/Account/Login/" id="LoginView1_login">Log in</a></li>
+
+                            
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+
+            <ul id="ulBreadcrumb" class="breadcrumb"><li><a href=""></a></li><li><a href="/Pages/WhoWeAre/">Who We Are</a></li><li><a href="/Pages/WhoWeAre/NewsAndEvents/">News And Events</a></li><li><a href="/Pages/WhoWeAre/NewsAndEvents/MicrosoftAzureBlog/">Microsoft Azure Blog</a></li></ul>
+
+        </nav>
+
+        <div class="container">
+            
+
+    <h1 class="pageHeading">Microsoft Azure Blog</h1>
+
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+            
+    <rss version="2.0">
+      <channel>
+        <title>Microsoft Azure Blog</title>
+        <description>
+          This is the syndication feed for the Microsoft Azure BLOG.<br /><br />
+        </description>
+             
+  
+        <item>
+             <div class="row">
+                        <div class="list-group">
+                            <a href="https://azure.microsoft.com/blog/mobile-engagement-xamarin-unity-apis/ " class="list-group-item" target="_blank">
+                                <h3 class="list-group-item-heading">Announcing Xamarin SDK, Unity SDK and open APIs for Azure Mobile Engagement</h3>
+                                <p class="list-group-item-text">
+                                    <blockquote>
+                                        <p> We are very excited to announce some key features to increase the reach of our product.</p>
+                                        <footer><cite title="Publish Date:  Tue, 29 Mar 2016 20:00:01 GMT">Publish Date:  Tue, 29 Mar 2016 20:00:01 GMT</cite></footer>
+                                    </blockquote>
+                                </p>
+                            </a>
+                        </div>
+                 </div>
+           </pubDate>
+        </item>
+  
+        <item>
+             <div class="row">
+                        <div class="list-group">
+                            <a href="https://azure.microsoft.com/blog/announcing-the-publication-of-parse-server-with-azure-managed-services/ " class="list-group-item" target="_blank">
+                                <h3 class="list-group-item-heading">Announcing the publication of Parse Server with Azure Managed Services</h3>
+                                <p class="list-group-item-text">
+                                    <blockquote>
+                                        <p> Today we are pleased to announce Parse Server on Azure Managed Services. </p>
+                                        <footer><cite title="Publish Date:  Tue, 29 Mar 2016 16:00:06 GMT">Publish Date:  Tue, 29 Mar 2016 16:00:06 GMT</cite></footer>
+                                    </blockquote>
+                                </p>
+                            </a>
+                        </div>
+                 </div>
+           </pubDate>
+        </item>
+  
+        <item>
+             <div class="row">
+                        <div class="list-group">
+                            <a href="https://azure.microsoft.com/blog/microsoft-brings-the-familiarity-of-r-to-the-scalability-of-hadoop-and-spark-in-the-cloud/ " class="list-group-item" target="_blank">
+                                <h3 class="list-group-item-heading">Microsoft brings the familiarity of R to the scalability of Hadoop and Spark in the Cloud</h3>
+                                <p class="list-group-item-text">
+                                    <blockquote>
+                                        <p> Today at Strata + Hadoop World, we announced the availability of R Server inside Azure HDInsight, our managed Hadoop-as-a-service part of Azure Data Lake.</p>
+                                        <footer><cite title="Publish Date:  Tue, 29 Mar 2016 15:00:14 GMT">Publish Date:  Tue, 29 Mar 2016 15:00:14 GMT</cite></footer>
+                                    </blockquote>
+                                </p>
+                            </a>
+                        </div>
+                 </div>
+           </pubDate>
+        </item>
+  
+        <item>
+             <div class="row">
+                        <div class="list-group">
+                            <a href="https://azure.microsoft.com/blog/open-source-cryptography-cracking-history-s-toughest-code/ " class="list-group-item" target="_blank">
+                                <h3 class="list-group-item-heading">Open source cryptography: Cracking historyâ€™s toughest code</h3>
+                                <p class="list-group-item-text">
+                                    <blockquote>
+                                        <p> Innovation through collaboration: A common concept in the open source community that has yielded some amazing achievements and helped shape modern software.</p>
+                                        <footer><cite title="Publish Date:  Tue, 29 Mar 2016 15:00:05 GMT">Publish Date:  Tue, 29 Mar 2016 15:00:05 GMT</cite></footer>
+                                    </blockquote>
+                                </p>
+                            </a>
+                        </div>
+                 </div>
+           </pubDate>
+        </item>
+  
+        <item>
+             <div class="row">
+                        <div class="list-group">
+                            <a href="https://azure.microsoft.com/blog/big-compute-team-at-build-and-nvidia-s-gpu-technology-conference/ " class="list-group-item" target="_blank">
+                                <h3 class="list-group-item-heading">Big Compute team at Build and NVIDIAâ€™s GPU Technology Conference</h3>
+                                <p class="list-group-item-text">
+                                    <blockquote>
+                                        <p> The Azure Big Compute team is set to speak at Microsoft Build and NVIDIA GPU Technology Conference the week after. Learn more about the new capabilities we'll be demonstrating!</p>
+                                        <footer><cite title="Publish Date:  Mon, 28 Mar 2016 16:00:17 GMT">Publish Date:  Mon, 28 Mar 2016 16:00:17 GMT</cite></footer>
+                                    </blockquote>
+                                </p>
+                            </a>
+                        </div>
+                 </div>
+           </pubDate>
+        </item>
+  
+        <item>
+             <div class="row">
+                        <div class="list-group">
+                            <a href="https://azure.microsoft.com/blog/update-your-freebsd-10-1-and-10-2-to-get-it-run-well-in-azure/ " class="list-group-item" target="_blank">
+                                <h3 class="list-group-item-heading">Update your FreeBSD 10.1 and 10.2 in Azure</h3>
+                                <p class="list-group-item-text">
+                                    <blockquote>
+                                        <p> If you are bringing FreeBSD 10.1 or 10.2 release version from the FreeBSD community or VMDepot to Azure, I recommend you update your FreeBSD 10.1 or 10.2 image with below Errata for FreeBSD Integration Service in Azure to avoid downtime or packet drop.</p>
+                                        <footer><cite title="Publish Date:  Mon, 28 Mar 2016 15:30:16 GMT">Publish Date:  Mon, 28 Mar 2016 15:30:16 GMT</cite></footer>
+                                    </blockquote>
+                                </p>
+                            </a>
+                        </div>
+                 </div>
+           </pubDate>
+        </item>
+  
+        <item>
+             <div class="row">
+                        <div class="list-group">
+                            <a href="https://azure.microsoft.com/blog/microsoft-azure-named-a-leader-in-gartner-s-enterprise-application-platform-as-a-service-magic-quadrant-for-the-third-consecutive-year/ " class="list-group-item" target="_blank">
+                                <h3 class="list-group-item-heading">Gartner names Microsoft Azure a leader in aPaaS</h3>
+                                <p class="list-group-item-text">
+                                    <blockquote>
+                                        <p> Gartner has recognized Microsoft Azure as a leader in their Magic Quadrant for Enterprise Application Platform as a Service for the third year in a row based on completeness of our vision and ability to execute. </p>
+                                        <footer><cite title="Publish Date:  Fri, 25 Mar 2016 18:46:32 GMT">Publish Date:  Fri, 25 Mar 2016 18:46:32 GMT</cite></footer>
+                                    </blockquote>
+                                </p>
+                            </a>
+                        </div>
+                 </div>
+           </pubDate>
+        </item>
+  
+        <item>
+             <div class="row">
+                        <div class="list-group">
+                            <a href="https://azure.microsoft.com/blog/azure-hdinsight-enables-customizations-to-live-running-clusters/ " class="list-group-item" target="_blank">
+                                <h3 class="list-group-item-heading">Azure HDInsight enables customizations to live running clusters</h3>
+                                <p class="list-group-item-text">
+                                    <blockquote>
+                                        <p> Today, we are announcing the ability to make customizations to live running Apache Hadoop clusters in Azure HDInsight.</p>
+                                        <footer><cite title="Publish Date:  Fri, 25 Mar 2016 17:02:12 GMT">Publish Date:  Fri, 25 Mar 2016 17:02:12 GMT</cite></footer>
+                                    </blockquote>
+                                </p>
+                            </a>
+                        </div>
+                 </div>
+           </pubDate>
+        </item>
+  
+        <item>
+             <div class="row">
+                        <div class="list-group">
+                            <a href="https://azure.microsoft.com/blog/containers-in-production-with-marathon-v1-0/ " class="list-group-item" target="_blank">
+                                <h3 class="list-group-item-heading">Containers in production with Marathon v1.0</h3>
+                                <p class="list-group-item-text">
+                                    <blockquote>
+                                        <p> Today weâ€™re highlighting Mesosphereâ€™s Marathon, which just reached its version 1.0 milestone and is part of Mesosphereâ€™s Datacenter Operating System (DCOS). Marathon 1.0 integrates with Apache Mesos on the Azure Container Service to deliver a complete enterprise-grade solution for container orchestration. </p>
+                                        <footer><cite title="Publish Date:  Thu, 24 Mar 2016 22:03:44 GMT">Publish Date:  Thu, 24 Mar 2016 22:03:44 GMT</cite></footer>
+                                    </blockquote>
+                                </p>
+                            </a>
+                        </div>
+                 </div>
+           </pubDate>
+        </item>
+  
+        <item>
+             <div class="row">
+                        <div class="list-group">
+                            <a href="https://azure.microsoft.com/blog/elastic-database-transactions-general-availability/ " class="list-group-item" target="_blank">
+                                <h3 class="list-group-item-heading">Elastic Database Transactions are now generally available for Azure SQL Database</h3>
+                                <p class="list-group-item-text">
+                                    <blockquote>
+                                        <p> Elastic Database Transactions for Azure SQL Database are now generally available. Elastic database transactions now support distributed transactions across Azure SQL Databases in multiple logical servers.</p>
+                                        <footer><cite title="Publish Date:  Thu, 24 Mar 2016 20:51:50 GMT">Publish Date:  Thu, 24 Mar 2016 20:51:50 GMT</cite></footer>
+                                    </blockquote>
+                                </p>
+                            </a>
+                        </div>
+                 </div>
+           </pubDate>
+        </item>
+  
+      </channel>
+    </rss>  
+  
+        </div>
+      
+
+    </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer1 row">
+                <div class="container">
+                    <div class="col-md-12 visible-md visible-lg text-center">
+                        <!-- Windows 10 New Campaign ‎3‎/‎10‎/‎2016 468X60 -->
+                        <div id='dccn-6f7a68bcf0'></div>
+                        <script type='text/javascript'>
+                            var ccs_cc_args = ccs_cc_args || [];
+                            (function () {
+                                var o = ccs_cc_args; o.push(['_SKey', '3387d140']); o.push(['_ZoneId', '6f7a68bcf0']);
+                                var sc = document.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
+                                sc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.cnetcontent.com/jsc/h.js';
+                                var n = document.getElementsByTagName('script')[0]; n.parentNode.insertBefore(sc, n);
+                            })();
+                        </script>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 visible-xs visible-sm  text-center">
+                        <!-- Windows 10 New Campaign ‎3‎/‎10‎/‎2016 234X60 -->
+                        <div id='dccn-9a500197af'></div>
+                        <script type='text/javascript'>
+                            var ccs_cc_args = ccs_cc_args || [];
+                            (function () {
+                                var o = ccs_cc_args; o.push(['_SKey', '3387d140']); o.push(['_ZoneId', '9a500197af']);
+                                var sc = document.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
+                                sc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.cnetcontent.com/jsc/h.js';
+                                var n = document.getElementsByTagName('script')[0]; n.parentNode.insertBefore(sc, n);
+                            })();
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+
+                <p class="text-muted">&copy; 2016 - Savitas Strategic Software Solutions LLC</p>
+
+            </div>
+
+        </footer>
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+        -->
+    </form>
+</body>
+</html>
