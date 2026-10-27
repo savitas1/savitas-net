@@ -40,7 +40,7 @@ Static restoration of the Savitas Strategic Software Solutions website
 Any static file server works, e.g.:
 
 ```
-python -m http.server 8123 --directory site
+python -m http.server 8123 --directory docs
 ```
 
 The site must be served from the domain root (links are root-absolute).
