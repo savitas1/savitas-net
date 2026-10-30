@@ -1,84 +1,100 @@
 <!--
 title: Request Appointment
-description: Request Appointment from Savitas Strategic Software Solutions.
+description: Request an appointment with Savitas for consulting, managed services or software development, online, by phone or onsite.
 -->
-<div>
-<h1 class="page-title">Request Appointment</h1>
-<div class="mb-3">
-<label for="frmTxtFirstName">First Name:</label>
-<input class="form-control" type="text"/>
-</div>
-<div class="mb-3">
-<label for="frmTxtLastName">Last Name:</label>
-<input class="form-control" type="text"/>
-</div>
-<div class="mb-3">
-<label for="exampleInputEmail1">Email address</label>
-<input class="form-control" type="text"/>
-</div>
-<div class="mb-3">
-<label for="frmTxtLastName">Phone Number</label> 
-<br/>
-<small>(we will call to confirm appointment and address)</small>
-<input class="form-control" type="text"/>
-</div>
-<div class="mb-3">
-<label for="frmTxtDate">Date</label>
-<input class="form-control" type="text"/>
-</div>
-<div class="mb-3">
-<label for="frmDrdTimeHour">Time (MST)</label>
-<select class="form-control">
-<option value="09:00 AM">09:00 AM</option>
-<option value="09:30 AM">09:30 AM</option>
-<option value="10:00 AM">10:00 AM</option>
-<option value="10:30 AM">10:30 AM</option>
-<option value="11:00 AM">11:00 AM</option>
-<option value="11:00 AM">11:00 AM</option>
-<option value="12:00 PM">12:00 PM</option>
-<option value="12:30 PM">12:30 PM</option>
-<option value="1:00 PM">1:00 PM</option>
-<option value="1:30 PM">1:30 PM</option>
-<option value="2:00 PM">2:00 PM</option>
-<option value="2:30 PM">2:30 PM</option>
-<option value="3:00 PM">3:00 PM</option>
-<option value="3:30 PM">3:30 PM</option>
-<option value="4:00 PM">4:00 PM</option>
-<option value="4:30 PM">4:30 PM</option>
-</select>
-</div>
-<div class="mb-3">
-<label for="frmDrdTimeDuration">Time Requested/Duration</label>
-<p class="small"><small>(in hours if known)</small></p>
-<select class="form-control">
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="8+">8+</option>
-</select>
-</div>
-<div class="mb-3">
-<label for="frmDrdServiceDelivery">Service Delivery Method:</label>
-<select class="form-control" onchange="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$frmDrdServiceDelivery\',\'\')', 0)">
-<option selected="selected" value="Online/Webconference/Remote Assistance">Online/Webconference/Remote Assistance</option>
-<option value="Onsite">Onsite</option>
-<option value="Phone">Phone</option>
-<option value="Other">Other</option>
-</select>
-</div>
-<div class="mb-3">
-<label for="frmTxtServiceRequested">Service Requested:</label>
-<input class="form-control" type="text" value="RequestAppointment"/>
-</div>
-<div class="mb-3">
-<label for="frmTxtNotesComments">Notes/Comments:</label>
-<textarea class="form-control" cols="20" rows="5">
-</textarea>
-</div>
-<input onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$MainContent$submit", "", true, "", "", false, false))' type="submit" value="Submit"/>
+<h1 class="page-title">Request an Appointment</h1>
+<p class="lead">Tell us what you need and when. We'll call to confirm the appointment and, for onsite visits, the address.</p>
+
+<div class="row">
+  <div class="col-lg-8">
+    <form id="appointment-form" class="mt-3" novalidate>
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label class="form-label" for="firstName">First name</label>
+          <input class="form-control" id="firstName" name="firstName" type="text" autocomplete="given-name" required>
+          <div class="invalid-feedback">First name is required.</div>
+        </div>
+        <div class="col-sm-6">
+          <label class="form-label" for="lastName">Last name</label>
+          <input class="form-control" id="lastName" name="lastName" type="text" autocomplete="family-name" required>
+          <div class="invalid-feedback">Last name is required.</div>
+        </div>
+        <div class="col-sm-6">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-control" id="email" name="email" type="email" autocomplete="email" required>
+          <div class="invalid-feedback">Enter a valid email address.</div>
+        </div>
+        <div class="col-sm-6">
+          <label class="form-label" for="phone">Phone</label>
+          <input class="form-control" id="phone" name="phone" type="tel" autocomplete="tel" required aria-describedby="phoneHelp">
+          <div id="phoneHelp" class="form-text">We'll call to confirm the appointment.</div>
+          <div class="invalid-feedback">Phone number is required.</div>
+        </div>
+        <div class="col-sm-6">
+          <label class="form-label" for="date">Preferred date</label>
+          <input class="form-control" id="date" name="date" type="date">
+        </div>
+        <div class="col-sm-6">
+          <label class="form-label" for="time">Preferred time (Mountain Time)</label>
+          <select class="form-select" id="time" name="time">
+            <option value="">Flexible</option>
+            <option>9:00 AM</option>
+            <option>9:30 AM</option>
+            <option>10:00 AM</option>
+            <option>10:30 AM</option>
+            <option>11:00 AM</option>
+            <option>11:30 AM</option>
+            <option>12:00 PM</option>
+            <option>12:30 PM</option>
+            <option>1:00 PM</option>
+            <option>1:30 PM</option>
+            <option>2:00 PM</option>
+            <option>2:30 PM</option>
+            <option>3:00 PM</option>
+            <option>3:30 PM</option>
+            <option>4:00 PM</option>
+            <option>4:30 PM</option>
+          </select>
+        </div>
+        <div class="col-sm-6">
+          <label class="form-label" for="duration">Estimated length (hours)</label>
+          <select class="form-select" id="duration" name="duration">
+            <option value="">Not sure</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>More than 8</option>
+          </select>
+        </div>
+        <div class="col-sm-6">
+          <label class="form-label" for="method">How should we meet?</label>
+          <select class="form-select" id="method" name="method">
+            <option>Online / video call / remote assistance</option>
+            <option>Onsite</option>
+            <option>Phone</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label class="form-label" for="service">Service requested</label>
+          <input class="form-control" id="service" name="service" type="text" placeholder="For example: network assessment, managed services, custom software" required>
+          <div class="invalid-feedback">Tell us which service you're interested in.</div>
+        </div>
+        <div class="col-12">
+          <label class="form-label" for="notes">Notes</label>
+          <textarea class="form-control" id="notes" name="notes" rows="5"></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary btn-lg" type="submit">Email my request</button>
+          <p class="form-text mt-2 mb-0">This opens your email app with your request addressed to <a href="mailto:sales@savitas.net">sales@savitas.net</a>. Nothing is sent until you press send.</p>
+          <div id="appointment-sent" class="alert alert-info mt-3 d-none" role="status">If your email app didn't open, email your request to <a href="mailto:sales@savitas.net">sales@savitas.net</a> or call <a href="tel:+17175748788">717-574-8788</a>.</div>
+        </div>
+      </div>
+    </form>
+  </div>
 </div>

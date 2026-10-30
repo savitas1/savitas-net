@@ -1,46 +1,58 @@
-# savitas.net — restored static site
+# savitas.net
 
-Static restoration of the Savitas Strategic Software Solutions website
-(savitas.net), recovered from the Internet Archive Wayback Machine on
-2026-10-27.
+Website of Savitas Strategic Software Solutions LLC, served by GitHub Pages
+from the `docs/` folder on `main` at https://savitas.net.
 
-## Provenance
+## Editing the site
 
-- The original site was an ASP.NET WebForms application, last alive in
-  October 2019 (returned 403 by December 2021; the domain was parked by
-  September 2024).
-- 112 unique archived URLs (pages, images, CSS, JS bundles) were pulled from
-  Wayback captures, preferring the 2016–2019 era. The homepage is the
-  2019-10-18 capture; most interior pages are 2016–2017 captures (the content
-  was stable across that window).
-- One partner image (`SelCert2cRGB_94x103.gif`) only existed in a 2011
-  capture and was recovered from there. The glyphicons `.woff`/`.woff2` fonts
-  were not archived intact and were replaced with the stock Bootstrap 3.3.7
-  files.
+The site is generated. Edit files under `src/`, never `docs/` directly.
 
-## What was changed from the originals
+| Path | What it is |
+|------|------------|
+| `src/pages/<url path>/index.html` | Page content: a front-matter comment followed by the HTML that goes inside `<main>` |
+| `src/layout.html` | Shared page shell: header, navigation, breadcrumb, footer |
+| `src/404.html` | Not-found page (written to `docs/404.html`) |
+| `src/static/` | Copied verbatim: CSS, JS, images, vendored Bootstrap, `CNAME`, `.nojekyll`, `robots.txt` |
+| `build.py` | Generator; the main navigation menu is defined at the top of this file |
 
-- ASP.NET bundle URLs (`/Content/css?v=…`, `/bundles/*?v=…`,
-  `*.axd?…`) were flattened into real files under `/_assets/`.
-- All internal links were canonicalized to the static directory layout
-  (`/Pages/.../` with `index.html`), including old `*.aspx` link variants.
-- Google Analytics, Application Insights, and the Facebook SDK snippets were
-  removed (dead accounts; they only produced console errors).
-- Everything else — markup, copy, images, styling — is as archived.
+Front matter at the top of each page:
 
-## Known limitations (inherent to a static restore)
+```html
+<!--
+title: Managed Services
+description: One sentence for search results (120–155 characters).
+-->
+```
 
-- `Register` / `Log in` / `Request Appointment` / contact forms render but do
-  not post anywhere (the WebForms backend is gone).
-- The "Customer Portal" nav link (`/fwlink/?linkid=10111`) pointed to an
-  external redirect service that no longer exists.
+Optional keys: `redirect: /new/path/` turns the page into a redirect stub,
+`full_width: true` lets the page supply its own containers (used by the home
+page hero), `noindex: true` hides it from search engines and the sitemap, and
+`page_title:` overrides the browser tab title.
 
-## Serving it
-
-Any static file server works, e.g.:
+Build, check for broken internal links, and preview:
 
 ```
+python build.py --check
 python -m http.server 8123 --directory docs
 ```
 
-The site must be served from the domain root (links are root-absolute).
+Then commit `src/` and `docs/` together and push to `main`. GitHub Pages
+rebuilds within a minute or two. The build stamps the footer copyright with
+the current year, so rebuilding in a new year updates it.
+
+The stack is Bootstrap 5.3.3 (vendored in `src/static/vendor/bootstrap`, no
+CDN), one small script for the appointment form, and no other dependencies.
+`build.py` uses only the Python standard library.
+
+## History
+
+- The original site was an ASP.NET WebForms application (Bootstrap 3, jQuery)
+  online from at least 2002 until October 2019. It was recovered from the
+  Internet Archive Wayback Machine on 2026-10-27, then rebuilt on this static
+  generator and its content refreshed for 2026 on 2026-10-29.
+- The old customer portal (log in / register) is retired; those URLs show a
+  notice. The appointment form composes an email in the visitor's own mail
+  app because there is no server.
+- Old URLs are preserved, including duplicate variants such as
+  `ApplicationLifecycleManagement+(ALM)`, which now redirect to the canonical
+  page.
