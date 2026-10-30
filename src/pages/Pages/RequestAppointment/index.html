@@ -1,0 +1,84 @@
+<!--
+title: Request Appointment
+description: Request Appointment from Savitas Strategic Software Solutions.
+-->
+<div>
+<h1 class="page-title">Request Appointment</h1>
+<div class="mb-3">
+<label for="frmTxtFirstName">First Name:</label>
+<input class="form-control" type="text"/>
+</div>
+<div class="mb-3">
+<label for="frmTxtLastName">Last Name:</label>
+<input class="form-control" type="text"/>
+</div>
+<div class="mb-3">
+<label for="exampleInputEmail1">Email address</label>
+<input class="form-control" type="text"/>
+</div>
+<div class="mb-3">
+<label for="frmTxtLastName">Phone Number</label> 
+<br/>
+<small>(we will call to confirm appointment and address)</small>
+<input class="form-control" type="text"/>
+</div>
+<div class="mb-3">
+<label for="frmTxtDate">Date</label>
+<input class="form-control" type="text"/>
+</div>
+<div class="mb-3">
+<label for="frmDrdTimeHour">Time (MST)</label>
+<select class="form-control">
+<option value="09:00 AM">09:00 AM</option>
+<option value="09:30 AM">09:30 AM</option>
+<option value="10:00 AM">10:00 AM</option>
+<option value="10:30 AM">10:30 AM</option>
+<option value="11:00 AM">11:00 AM</option>
+<option value="11:00 AM">11:00 AM</option>
+<option value="12:00 PM">12:00 PM</option>
+<option value="12:30 PM">12:30 PM</option>
+<option value="1:00 PM">1:00 PM</option>
+<option value="1:30 PM">1:30 PM</option>
+<option value="2:00 PM">2:00 PM</option>
+<option value="2:30 PM">2:30 PM</option>
+<option value="3:00 PM">3:00 PM</option>
+<option value="3:30 PM">3:30 PM</option>
+<option value="4:00 PM">4:00 PM</option>
+<option value="4:30 PM">4:30 PM</option>
+</select>
+</div>
+<div class="mb-3">
+<label for="frmDrdTimeDuration">Time Requested/Duration</label>
+<p class="small"><small>(in hours if known)</small></p>
+<select class="form-control">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="8+">8+</option>
+</select>
+</div>
+<div class="mb-3">
+<label for="frmDrdServiceDelivery">Service Delivery Method:</label>
+<select class="form-control" onchange="javascript:setTimeout('__doPostBack(\'ctl00$MainContent$frmDrdServiceDelivery\',\'\')', 0)">
+<option selected="selected" value="Online/Webconference/Remote Assistance">Online/Webconference/Remote Assistance</option>
+<option value="Onsite">Onsite</option>
+<option value="Phone">Phone</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div class="mb-3">
+<label for="frmTxtServiceRequested">Service Requested:</label>
+<input class="form-control" type="text" value="RequestAppointment"/>
+</div>
+<div class="mb-3">
+<label for="frmTxtNotesComments">Notes/Comments:</label>
+<textarea class="form-control" cols="20" rows="5">
+</textarea>
+</div>
+<input onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$MainContent$submit", "", true, "", "", false, false))' type="submit" value="Submit"/>
+</div>

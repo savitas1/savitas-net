@@ -1,0 +1,61 @@
+<!--
+title: Log In
+description: Log In from Savitas Strategic Software Solutions.
+-->
+<h1 class="page-title">Log In</h1>
+<div class="row">
+<div class="col-md-8">
+<section id="loginForm">
+<div>
+<h4>Use a local account to log in.</h4>
+<hr/>
+<div class="mb-3">
+<label class="col-md-2 form-label" for="MainContent_Email">Email</label>
+<div class="col-md-10">
+<input class="form-control" type="email"/>
+</div>
+</div>
+<div class="mb-3">
+<label class="col-md-2 form-label" for="MainContent_Password">Password</label>
+<div class="col-md-10">
+<input class="form-control" type="password"/>
+</div>
+</div>
+<div class="mb-3">
+<div class="offset-md-2 col-md-10">
+<div class="checkbox">
+<input type="checkbox"/>
+<label for="MainContent_RememberMe">Remember me?</label>
+</div>
+</div>
+</div>
+<div class="mb-3">
+<div class="offset-md-2 col-md-10">
+<input class="btn btn-outline-primary" onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$MainContent$ctl05", "", true, "", "", false, false))' type="submit" value="Log in"/>
+</div>
+</div>
+</div>
+<p>
+<a href="/Account/Register/">Register as a new user</a>
+</p>
+</section>
+</div>
+<div class="col-md-4">
+<section id="socialLoginForm">
+<div id="socialLoginList">
+<h4>Use another service to log in.</h4>
+<hr/>
+<p>
+<button class="btn btn-outline-primary" name="provider" title="Log in using your Facebook account." type="submit" value="Facebook">
+                    Facebook
+                </button>
+</p>
+<p>
+<button class="btn btn-outline-primary" name="provider" title="Log in using your Microsoft account." type="submit" value="Microsoft">
+                    Microsoft
+                </button>
+</p>
+</div>
+</section>
+</div>
+</div>
