@@ -29,6 +29,9 @@ STATIC = os.path.join(SRC, "static")
 OUT = os.path.join(ROOT, "docs")
 SITE_URL = "https://savitas.net"
 SITE_NAME = "Savitas"
+# The home page deliberately shows no street address or location.
+LOCATION_LABEL = '        <span class="d-none d-sm-inline">Hastings, Florida</span>\n'
+FOOTER_ADDRESS = "            4255 Benedict St.<br>\n            Hastings, FL 32145<br>\n"
 
 # (label, url) items; ("-", None) is a divider; ("#Header", None) is a section header.
 WHO_WE_ARE = [
@@ -226,6 +229,8 @@ def render_page(layout, meta, body, url, titles):
         "breadcrumb": render_breadcrumb(url, titles),
         "main": main,
         "year": str(datetime.date.today().year),
+        "location_label": "" if url == "/" else LOCATION_LABEL,
+        "footer_address": "" if url == "/" else FOOTER_ADDRESS,
     }
     return re.sub(r"\{\{(\w+)\}\}", lambda m: values[m.group(1)], layout)
 

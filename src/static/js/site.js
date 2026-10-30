@@ -20,7 +20,7 @@
       "Email: " + field("email"),
       "Phone: " + field("phone"),
       "Preferred date: " + (field("date") || "Flexible"),
-      "Preferred time (Mountain): " + (field("time") || "Flexible"),
+      "Preferred time (Eastern): " + (field("time") || "Flexible"),
       "Estimated duration (hours): " + (field("duration") || "Unknown"),
       "Delivery method: " + field("method"),
       "Service requested: " + field("service"),
